@@ -1,25 +1,24 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "${group}",
-		"id": "example_mod",
-		"version": "${version}",
+		"group": "io.github.troglomorph",
+		"id": "gottem",
+		"version": "1.0.0",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Gottem",
+			"description": "Grab your friends",
 			"contributors": {
-				"Your name here": "Owner"
+				"Marlie": "Owner"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"issues": "https://github.com/Troglomorph/Gottem/issues",
+				"sources": "https://github.com/Troglomorph/Gottem"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/gottem/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "io.github.troglomorph.gottem.Gottem"
 		},
 		"depends": [
 			{
@@ -32,9 +31,9 @@
 			},
 			{
 				"id": "minecraft",
-				"versions": ">=1.20"
+				"versions": ">=1.20.1"
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "gottem.mixins.json"
 }
